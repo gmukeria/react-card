@@ -1,0 +1,13 @@
+.time {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.time > span {
+  color: var(--soft-blue);
+}
+
+.time > span {
+  font-size: 0.9375rem;
+}

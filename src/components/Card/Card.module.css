@@ -1,0 +1,106 @@
+.card_wrapper {
+  max-width: 330px;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  background-color: var(--card-dark-blue);
+}
+
+@media (max-width: 374px) {
+  .card_wrapper {
+    max-width: 90%;
+    padding: 1.125rem;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .card_wrapper {
+    max-width: 350px;
+    padding-bottom: 1.875rem;
+  }
+}
+
+.card_image {
+  position: relative;
+  max-height: 285px;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .card_image {
+    max-height: 305px;
+  }
+}
+
+.card_image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--light-cyan)
+    url(https://raw.githubusercontent.com/MohamedAridah/frontendmentor_nft-preview-card-component/main/images/icon-view.svg)
+    no-repeat center center;
+  opacity: 0;
+  transition: all var(--main-transition);
+}
+
+.card_image:hover::before {
+  opacity: 1;
+}
+
+.card_details {
+  padding-top: 1.5625rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .card_details {
+    padding-bottom: 1.25rem;
+  }
+}
+
+.card_text h1 {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 1.125rem;
+  transition: color var(--main-transition);
+}
+
+@media (max-width: 374px) {
+  .card_text h1 {
+    font-size: 1.25rem;
+  }
+}
+
+.card_text h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.card_text p {
+  color: var(--soft-blue);
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 374px) {
+  .card_text p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .card_text p {
+    margin-bottom: 1.5625rem;
+  }
+}
+
+.card_stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

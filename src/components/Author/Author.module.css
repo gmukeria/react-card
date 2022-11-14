@@ -1,0 +1,35 @@
+.author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 0.875rem;
+  border-top: 1px solid var(--line-dark-blue);
+}
+
+.author .avater {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
+
+@media (max-width: 374px) {
+  .author .avater {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.author p {
+  color: var(--soft-blue);
+}
+
+.author a {
+  color: var(--white);
+  margin-left: 2px;
+  transition: color var(--main-transition);
+}
+
+.author a:hover {
+  color: var(--cyan);
+}

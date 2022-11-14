@@ -1,0 +1,14 @@
+.amount {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+amount > span {
+  font-size: 0.9375rem;
+}
+
+.amount > span {
+  color: var(--cyan);
+  font-weight: 700;
+}
